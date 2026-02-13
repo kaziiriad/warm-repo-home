@@ -1,3 +1,4 @@
+import React from "react";
 import { motion } from "framer-motion";
 import { Mail, Phone, Linkedin, BookOpen, Youtube } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -10,8 +11,8 @@ const links = [
   { icon: Youtube, label: "I.T. Darshonik", href: "https://www.youtube.com/@sultanmahmud07" },
 ];
 
-const Contact = () => (
-  <section id="contact" className="py-24">
+const Contact = React.forwardRef<HTMLElement>((_, ref) => (
+  <section id="contact" className="py-24" ref={ref}>
     <div className="section-container">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -44,6 +45,8 @@ const Contact = () => (
       </motion.div>
     </div>
   </section>
-);
+));
+
+Contact.displayName = "Contact";
 
 export default Contact;

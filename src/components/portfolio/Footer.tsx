@@ -1,5 +1,7 @@
-const Footer = () => (
-  <footer className="border-t border-border py-8">
+import React from "react";
+
+const Footer = React.forwardRef<HTMLElement>((_, ref) => (
+  <footer className="border-t border-border py-8" ref={ref}>
     <div className="section-container text-center">
       <p className="text-muted-foreground text-sm italic mb-2">
         "Building robust systems that scale, one commit at a time"
@@ -9,6 +11,8 @@ const Footer = () => (
       </p>
     </div>
   </footer>
-);
+));
+
+Footer.displayName = "Footer";
 
 export default Footer;
