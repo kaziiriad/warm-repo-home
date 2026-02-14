@@ -3,7 +3,7 @@ import { BookOpen, Youtube, MessageCircle, Code2, ExternalLink } from "lucide-re
 import { Card, CardContent } from "@/components/ui/card";
 
 const Writing = () => (
-  <section className="py-24 bg-muted/30">
+  <section className="py-24 bg-section-alt">
     <div className="section-container">
       <motion.h2
         initial={{ opacity: 0 }}
