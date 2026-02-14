@@ -79,7 +79,7 @@ const item = {
 };
 
 const Projects = () => (
-  <section id="projects" className="py-24 bg-muted/30">
+  <section id="projects" className="py-24 bg-section-alt">
     <div className="section-container">
       <motion.h2
         initial={{ opacity: 0 }}

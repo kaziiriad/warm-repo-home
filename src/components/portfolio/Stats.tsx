@@ -39,7 +39,7 @@ const StatCard = ({ value, label, delay }: { value: string; label: string; delay
 };
 
 const Stats = () => (
-  <section className="py-24 bg-muted/30">
+  <section className="py-24 bg-section-alt">
     <div className="section-container">
       <motion.h2
         initial={{ opacity: 0 }}
