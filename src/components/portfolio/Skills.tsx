@@ -2,16 +2,16 @@ import { motion } from "framer-motion";
 
 const categories = [
   {
-    title: "Backend",
-    skills: ["Python", "Go", "FastAPI", "Django", "Asyncio"],
+    title: "Languages & Frameworks",
+    skills: ["Python", "Go", "JavaScript", "FastAPI", "Django", "Asyncio"],
   },
   {
     title: "Infrastructure & DevOps",
-    skills: ["AWS", "Terraform", "Pulumi", "Ansible", "Docker", "Nginx", "CI/CD", "PgBouncer"],
+    skills: ["AWS", "Pulumi", "Ansible", "Docker", "Nginx", "CI/CD", "PgBouncer"],
   },
   {
     title: "Distributed Systems",
-    skills: ["Celery", "RabbitMQ", "Redis", "Docker Swarm", "K3s"],
+    skills: ["Celery", "RabbitMQ", "Redis", "Docker Swarm", "Kubernetes"],
   },
   {
     title: "Databases",
@@ -51,7 +51,7 @@ const Skills = () => (
               {cat.skills.map((s) => (
                 <span
                   key={s}
-                  className="px-3 py-1.5 rounded-full text-sm bg-muted border border-border text-foreground font-mono hover:border-primary/50 hover:bg-primary/5 transition-colors cursor-default"
+                  className="px-3 py-1.5 rounded-full text-sm bg-slate-100 dark:bg-muted border border-border text-foreground font-mono hover:border-primary/50 hover:bg-primary/10 transition-colors cursor-default shadow-sm"
                 >
                   {s}
                 </span>

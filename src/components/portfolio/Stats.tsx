@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 
 const stats = [
   { value: "6+", label: "Production Apps" },
-  { value: "<5ms", label: "API Response" },
+  { value: "Sub-10ms", label: "API Response" },
   { value: "11+", label: "EC2 Instances Automated" },
   { value: "1K+", label: "Concurrent Users" },
   { value: "500+", label: "DSA Problems Solved" },

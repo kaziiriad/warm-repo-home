@@ -11,7 +11,7 @@ const items = [
   {
     icon: Zap,
     title: "Performance Engineering",
-    desc: "Optimized systems achieving sub-5ms response times with 1K+ concurrent users",
+    desc: "Optimized systems achieving sub-10ms response times with 1K+ concurrent users",
   },
   {
     icon: GitBranch,
@@ -62,7 +62,7 @@ const Differentiators = () => {
         >
           {items.map((d) => (
             <motion.div key={d.title} variants={item}>
-              <Card className="bg-card border-border card-hover glow-border h-full">
+              <Card className="bg-white shadow-lg hover:shadow-xl border-border h-full">
                 <CardContent className="p-6">
                   <d.icon className="w-8 h-8 text-primary mb-4" />
                   <h3 className="font-semibold text-lg mb-2">{d.title}</h3>

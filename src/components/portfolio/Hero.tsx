@@ -19,11 +19,10 @@ const Hero = () => {
         >
           <Badge className="mb-6 bg-primary/10 text-primary border-primary/30 px-4 py-1.5 text-sm">
             <Globe className="w-3.5 h-3.5 mr-1.5" />
-            Open to Remote
+            Open to Hire
           </Badge>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-4">
-            Hi, I'm{" "}
             <span className="text-gradient-purple">Sultan Mahmud</span>
           </h1>
 
@@ -39,7 +38,7 @@ const Hero = () => {
 
           <div className="flex flex-wrap gap-3">
             <Button asChild className="bg-gradient-purple hover:opacity-90">
-              <a href="https://www.linkedin.com/in/sultan-mahmud-dev/" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/sultan-mahmud-b25b25130/" target="_blank" rel="noopener noreferrer">
                 <Linkedin className="w-4 h-4" /> LinkedIn
               </a>
             </Button>
@@ -54,7 +53,7 @@ const Hero = () => {
               </a>
             </Button>
             <Button asChild variant="ghost" className="text-muted-foreground hover:text-primary">
-              <a href="#" onClick={(e) => e.preventDefault()}>
+              <a href="https://docs.google.com/document/d/1eiou6NCl408uRhqx-_GazGj_YBPiKtliEkBcOPL95iI/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
                 <FileText className="w-4 h-4" /> Resume
               </a>
             </Button>

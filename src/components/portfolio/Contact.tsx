@@ -6,9 +6,9 @@ import { Button } from "@/components/ui/button";
 const links = [
   { icon: Mail, label: "kaziiriad@gmail.com", href: "mailto:kaziiriad@gmail.com" },
   { icon: Phone, label: "+880 1683152495", href: "tel:+8801683152495" },
-  { icon: Linkedin, label: "Sultan Mahmud", href: "https://www.linkedin.com/in/sultan-mahmud-dev/" },
+  { icon: Linkedin, label: "Sultan Mahmud", href: "https://www.linkedin.com/in/sultan-mahmud-b25b25130/" },
   { icon: BookOpen, label: "Medium", href: "https://medium.com/@kazisultanmahmud" },
-  { icon: Youtube, label: "I.T. Darshonik", href: "https://www.youtube.com/@sultanmahmud07" },
+  // { icon: Youtube, label: "I.T. Darshonik", href: "https://youtube.com/@itdarshonik" },
 ];
 
 const Contact = React.forwardRef<HTMLElement>((_, ref) => (
