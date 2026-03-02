@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 const categories = [
   {
     title: "Languages & Frameworks",
-    skills: ["Python", "Go", "JavaScript", "FastAPI", "Django", "Asyncio"],
+    skills: ["Python", "Go", "Chi Router", "JavaScript", "FastAPI", "Django", "Asyncio"],
   },
   {
     title: "Infrastructure & DevOps",
