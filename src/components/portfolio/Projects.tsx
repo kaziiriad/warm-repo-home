@@ -15,8 +15,8 @@ const projects: Project[] = [
   {
     name: "Scalable URL Shortener",
     complexity: "High",
-    desc: "High-performance URL shortener with three independent microservices, dual database strategy, and production K3s deployment achieving sub-5ms redirect latency.",
-    tech: ["FastAPI", "Redis", "PostgreSQL", "MongoDB", "K3s", "Pulumi", "OpenTelemetry"],
+    desc: "Polyglot microservice with Go redirect service (sub-1ms latency), full OpenTelemetry observability (Tempo/Loki/Grafana), circuit breaker pattern, and production K3s deployment.",
+    tech: ["Go", "FastAPI", "Chi", "Redis", "PostgreSQL", "MongoDB", "OpenTelemetry", "Tempo", "Loki", "K3s", "Pulumi"],
     github: "https://github.com/kaziiriad/url-shortener-scalable",
   },
   {
