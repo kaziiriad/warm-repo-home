@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 
 const stats = [
   { value: "6+", label: "Production Apps" },
-  { value: "Sub-10ms", label: "API Response" },
+  { value: "Sub\u20111ms", label: "API Response" },
   { value: "11+", label: "EC2 Instances Automated" },
   { value: "1K+", label: "Concurrent Users" },
   { value: "500+", label: "DSA Problems Solved" },
@@ -29,7 +29,7 @@ const StatCard = ({ value, label, delay }: { value: string; label: string; delay
         initial={{ opacity: 0, scale: 0.5 }}
         animate={visible ? { opacity: 1, scale: 1 } : {}}
         transition={{ delay, duration: 0.5, type: "spring" }}
-        className="text-3xl sm:text-4xl font-bold text-gradient-purple mb-1"
+        className="text-3xl sm:text-4xl font-bold text-gradient-purple mb-1 inline-block"
       >
         {value}
       </motion.div>
