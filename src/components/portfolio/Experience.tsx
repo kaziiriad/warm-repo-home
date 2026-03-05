@@ -16,7 +16,7 @@ const Experience = () => (
       </motion.h2>
 
       <div className="max-w-4xl mx-auto space-y-8">
-        {/* Freelance Backend Engineer */}
+        {/* Backend Engineer & Product Builder */}
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -28,17 +28,24 @@ const Experience = () => (
                 <div className="flex items-center gap-3">
                   <Briefcase className="w-6 h-6 text-primary" />
                   <div>
-                    <h3 className="font-semibold text-lg">Backend Engineer</h3>
-                    <p className="text-secondary font-medium">Freelance/Contract</p>
+                    <h3 className="font-semibold text-lg">Backend Engineer & Product Builder</h3>
+                    <p className="text-secondary font-medium">Building Production Systems</p>
                   </div>
                 </div>
                 <Badge className="bg-primary/10 text-primary border-primary/30">Aug 2024 – Present</Badge>
               </div>
 
               <div className="flex items-center gap-4 text-sm text-muted-foreground mb-4">
-                <span className="flex items-center gap-1"><MapPin className="w-3.5 h-3.5" /> Dhaka, Bangladesh</span>
+                <span className="flex items-center gap-1"><MapPin className="w-3.5 h-3.5" /> Remote</span>
                 <span>·</span>
-                <span>Full-time Contract</span>
+                <span>Portfolio Projects</span>
+              </div>
+
+              {/* Context Statement */}
+              <div className="mb-4 p-3 rounded-lg bg-primary/5 border border-primary/20">
+                <p className="text-sm text-foreground">
+                  Building production systems to demonstrate platform engineering capabilities while actively seeking full-time opportunities
+                </p>
               </div>
 
               {/* Key Achievements */}
@@ -46,25 +53,31 @@ const Experience = () => (
                 <div className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-accent-foreground shrink-0 mt-0.5" />
                   <p className="text-sm">
-                    Architected and delivered <span className="text-foreground font-medium">5 production systems</span> across e-commerce (2), FinTech (1), and SaaS platforms (2)
+                    Architected and deployed <span className="text-foreground font-medium">5 production-grade applications</span> serving <span className="text-primary font-medium">5,000+ real users</span> across e-commerce, fintech, and SaaS domains
                   </p>
                 </div>
                 <div className="flex items-start gap-2">
                   <TrendingUp className="w-4 h-4 text-accent-foreground shrink-0 mt-0.5" />
                   <p className="text-sm">
-                    Serving <span className="text-primary font-medium">5,000+ combined users</span> with <span className="text-foreground font-medium">99.9% uptime</span>
+                    Managed <span className="text-foreground font-medium">11+ EC2 instances</span> with <span className="text-primary font-medium">99.9% uptime</span> through multi-AZ AWS infrastructure
                   </p>
                 </div>
                 <div className="flex items-start gap-2">
                   <Zap className="w-4 h-4 text-secondary shrink-0 mt-0.5" />
                   <p className="text-sm">
-                    High-concurrency APIs sustaining <span className="text-primary font-medium">1,000+ concurrent users</span> with <span className="text-foreground font-medium">sub-10ms latency</span>
+                    Built <span className="text-foreground font-medium">ElastiKube</span>: ML-enhanced Kubernetes autoscaler achieving <span className="text-primary font-medium">60% cost reduction</span> with 4-layer intelligent scaling
+                  </p>
+                </div>
+                <div className="flex items-start gap-2">
+                  <Zap className="w-4 h-4 text-secondary shrink-0 mt-0.5" />
+                  <p className="text-sm">
+                    Engineered polyglot URL shortener with <span className="text-foreground font-medium">Go redirect service</span> achieving <span className="text-primary font-medium">sub-1ms latency</span> and comprehensive observability
                   </p>
                 </div>
                 <div className="flex items-start gap-2">
                   <Clock className="w-4 h-4 text-secondary shrink-0 mt-0.5" />
                   <p className="text-sm">
-                    Reduced deployment time from <span className="text-foreground font-medium">4 hours to 15 minutes</span> with zero-downtime releases
+                    Automated infrastructure deployment with <span className="text-foreground font-medium">Pulumi & Ansible</span>, reducing deployment time <span className="text-primary font-medium">93.75%</span> (4 hours → 15 minutes)
                   </p>
                 </div>
               </div>
@@ -73,7 +86,7 @@ const Experience = () => (
               <div className="border-t border-border pt-4">
                 <p className="text-xs text-muted-foreground mb-2">Tech Stack:</p>
                 <div className="flex flex-wrap gap-2">
-                  {["Python", "FastAPI", "Django", "PostgreSQL", "Redis", "AWS", "Pulumi", "Ansible", "GitHub Actions"].map((t) => (
+                  {["Python", "Go", "FastAPI", "Django", "AWS", "Kubernetes", "Docker", "PostgreSQL", "Redis", "MongoDB", "Pulumi", "Ansible", "OpenTelemetry", "Grafana"].map((t) => (
                     <span key={t} className="text-xs px-2 py-1 rounded-full bg-muted border border-border text-foreground font-mono">{t}</span>
                   ))}
                 </div>
@@ -95,7 +108,7 @@ const Experience = () => (
                 <div className="flex items-center gap-3">
                   <Briefcase className="w-6 h-6 text-primary" />
                   <div>
-                    <h3 className="font-semibold text-lg">Backend Developer Intern</h3>
+                    <h3 className="font-semibold text-lg">Backend Developer</h3>
                     <p className="text-secondary font-medium">Cooking Station</p>
                   </div>
                 </div>
@@ -105,7 +118,7 @@ const Experience = () => (
               <div className="flex items-center gap-4 text-sm text-muted-foreground mb-4">
                 <span className="flex items-center gap-1"><MapPin className="w-3.5 h-3.5" /> Dhaka, Bangladesh</span>
                 <span>·</span>
-                <span>Full-time Internship</span>
+                <span>Internship</span>
               </div>
 
               {/* Key Achievements */}
@@ -113,19 +126,19 @@ const Experience = () => (
                 <div className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-accent-foreground shrink-0 mt-0.5" />
                   <p className="text-sm">
-                    Designed <span className="text-foreground font-medium">RBAC dashboard</span> for <span className="text-primary font-medium">200+ users</span> with real-time analytics
+                    Designed <span className="text-foreground font-medium">role-based admin dashboard</span> serving <span className="text-primary font-medium">200+ users</span> with real-time meal analytics
                   </p>
                 </div>
                 <div className="flex items-start gap-2">
                   <TrendingUp className="w-4 h-4 text-accent-foreground shrink-0 mt-0.5" />
                   <p className="text-sm">
-                    Automated <span className="text-foreground font-medium">40% of manual processes</span> through intelligent workflows
+                    Eliminated <span className="text-foreground font-medium">40% of manual effort</span> in account management through automated workflows
                   </p>
                 </div>
                 <div className="flex items-start gap-2">
                   <Zap className="w-4 h-4 text-accent-foreground shrink-0 mt-0.5" />
                   <p className="text-sm">
-                    Built <span className="text-foreground font-medium">production-ready meal scheduling system</span> with cron jobs
+                    Built <span className="text-foreground font-medium">production-ready meal scheduling system</span> using cron jobs with configurable time boundaries
                   </p>
                 </div>
               </div>
@@ -134,7 +147,7 @@ const Experience = () => (
               <div className="border-t border-border pt-4">
                 <p className="text-xs text-muted-foreground mb-2">Tech Stack:</p>
                 <div className="flex flex-wrap gap-2">
-                  {["Python", "Django", "MySQL", "Docker", "JS", "HTML"].map((t) => (
+                  {["Python", "Django", "PostgreSQL", "Docker", "JavaScript", "HTML/CSS"].map((t) => (
                     <span key={t} className="text-xs px-2 py-1 rounded-full bg-muted border border-border text-foreground font-mono">{t}</span>
                   ))}
                 </div>
@@ -160,16 +173,32 @@ const Experience = () => (
                     <p className="text-secondary font-medium">Daffodil International University</p>
                   </div>
                 </div>
-                <Badge className="bg-secondary/10 text-secondary border-secondary/30">Sep 2017 – Dec 2022</Badge>
+                <Badge className="bg-secondary/10 text-secondary border-secondary/30">Sep 2017 – Sep 2023</Badge>
               </div>
 
               <div className="flex items-center gap-2 text-sm text-muted-foreground mb-3">
                 <MapPin className="w-3.5 h-3.5" /> Dhaka, Bangladesh
               </div>
 
+              {/* Achievements */}
+              <div className="space-y-2 mb-3">
+                <div className="flex items-start gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-accent-foreground shrink-0 mt-0.5" />
+                  <p className="text-sm">
+                    Ranked <span className="text-primary font-medium">6th/300+ participants</span> in DIU Programming Contest (Top 2%)
+                  </p>
+                </div>
+                <div className="flex items-start gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-accent-foreground shrink-0 mt-0.5" />
+                  <p className="text-sm">
+                    Solved <span className="text-primary font-medium">500+ competitive programming problems</span> across multiple platforms
+                  </p>
+                </div>
+              </div>
+
               {/* Key Coursework */}
-              <div className="space-y-2">
-                <p className="text-sm text-muted-foreground mb-2">Relevant Coursework:</p>
+              <div className="border-t border-border pt-3">
+                <p className="text-xs text-muted-foreground mb-2">Relevant Coursework:</p>
                 <div className="flex flex-wrap gap-2">
                   {["Data Structures", "Algorithms", "Database Systems", "Distributed Systems", "Software Engineering"].map((c) => (
                     <span key={c} className="text-xs px-2 py-1 rounded-full bg-muted border border-border text-foreground">{c}</span>
