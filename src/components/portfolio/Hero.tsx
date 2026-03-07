@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Linkedin, Mail, FileText, BookOpen, Globe } from "lucide-react";
+import { Linkedin, Mail, FileText, BookOpen, Github } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 
@@ -17,9 +17,8 @@ const Hero = () => {
           transition={{ duration: 0.7 }}
           className="max-w-3xl"
         >
-          <Badge className="mb-6 bg-primary/10 text-primary border-primary/30 px-4 py-1.5 text-sm">
-            <Globe className="w-3.5 h-3.5 mr-1.5" />
-            Open to Hire
+          <Badge className="mb-6 bg-green-500/10 text-green-500 border-green-500/30 px-4 py-1.5 text-sm animate-pulse">
+            🟢 Available for Full-Time Opportunities
           </Badge>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-4">
@@ -27,24 +26,36 @@ const Hero = () => {
           </h1>
 
           <p className="text-lg sm:text-xl text-secondary font-medium mb-3 font-mono">
-            Backend Engineer · Infrastructure Automation · Distributed Systems
+            Backend Engineer · DevOps · Distributed Systems
           </p>
 
-          <p className="text-muted-foreground text-lg max-w-2xl mb-8 leading-relaxed">
-            Building production-grade distributed systems with automated AWS deployments, achieving{" "}
-            <span className="text-foreground font-medium">sub-5ms response times</span> at{" "}
-            <span className="text-foreground font-medium">1K+ concurrent users</span>.
+          <p className="text-muted-foreground text-lg max-w-2xl mb-2 leading-relaxed">
+            Backend engineer specializing in distributed systems and Kubernetes infrastructure. 
+            Built production-grade systems serving{" "}
+            <span className="text-foreground font-medium">5,000+ users</span> with{" "}
+            <span className="text-foreground font-medium">ML-enhanced autoscaling</span> (60% cost reduction) 
+            and <span className="text-foreground font-medium">sub-1ms microservices</span>.
+          </p>
+
+          <p className="text-muted-foreground text-base max-w-2xl mb-8">
+            Deep expertise in AWS, Python, Go, Kubernetes, and infrastructure automation.{" "}
+            <span className="text-primary font-medium">Seeking full-time backend or DevOps engineering roles.</span>
           </p>
 
           <div className="flex flex-wrap gap-3">
             <Button asChild className="bg-gradient-purple hover:opacity-90">
+              <a href="mailto:kaziiriad@gmail.com">
+                <Mail className="w-4 h-4" /> Contact Me
+              </a>
+            </Button>
+            <Button asChild variant="outline" className="glow-border hover:bg-primary/10">
               <a href="https://www.linkedin.com/in/sultan-mahmud-b25b25130/" target="_blank" rel="noopener noreferrer">
                 <Linkedin className="w-4 h-4" /> LinkedIn
               </a>
             </Button>
             <Button asChild variant="outline" className="glow-border hover:bg-primary/10">
-              <a href="mailto:kaziiriad@gmail.com">
-                <Mail className="w-4 h-4" /> Hire Me
+              <a href="https://github.com/kaziiriad" target="_blank" rel="noopener noreferrer">
+                <Github className="w-4 h-4" /> GitHub
               </a>
             </Button>
             <Button asChild variant="outline" className="glow-border hover:bg-primary/10">
