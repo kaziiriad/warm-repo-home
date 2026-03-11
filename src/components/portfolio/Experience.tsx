@@ -1,3 +1,4 @@
+
 import { motion } from "framer-motion";
 import { Briefcase, GraduationCap, MapPin, CheckCircle2, TrendingUp, Zap, Clock } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
@@ -53,13 +54,13 @@ const Experience = () => (
                 <div className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 text-accent-foreground shrink-0 mt-0.5" />
                   <p className="text-sm">
-                    Architected and deployed <span className="text-foreground font-medium">5 production-grade applications</span> serving <span className="text-primary font-medium">5,000+ real users</span> across e-commerce, fintech, and SaaS domains
+                    Architected and deployed <span className="text-foreground font-medium">5 production-grade applications</span> with complete <span className="text-primary font-medium">CI/CD pipelines</span> across e-commerce, fintech, and SaaS domains
                   </p>
                 </div>
                 <div className="flex items-start gap-2">
                   <TrendingUp className="w-4 h-4 text-accent-foreground shrink-0 mt-0.5" />
                   <p className="text-sm">
-                    Managed <span className="text-foreground font-medium">11+ EC2 instances</span> with <span className="text-primary font-medium">99.9% uptime</span> through multi-AZ AWS infrastructure
+                    Managed <span className="text-foreground font-medium">11+ EC2 instances</span> with <span className="text-primary font-medium">automated monitoring and alerting</span> through multi-AZ AWS infrastructure
                   </p>
                 </div>
                 <div className="flex items-start gap-2">

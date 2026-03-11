@@ -29,17 +29,12 @@ const Hero = () => {
             Backend Engineer · DevOps · Distributed Systems
           </p>
 
-          <p className="text-muted-foreground text-lg max-w-2xl mb-2 leading-relaxed">
-            Backend engineer specializing in distributed systems and Kubernetes infrastructure. 
-            Built production-grade systems serving{" "}
-            <span className="text-foreground font-medium">5,000+ users</span> with{" "}
-            <span className="text-foreground font-medium">ML-enhanced autoscaling</span> (60% cost reduction) 
-            and <span className="text-foreground font-medium">sub-1ms microservices</span>.
-          </p>
-
-          <p className="text-muted-foreground text-base max-w-2xl mb-8">
-            Deep expertise in AWS, Python, Go, Kubernetes, and infrastructure automation.{" "}
-            <span className="text-primary font-medium">Seeking full-time backend or DevOps engineering roles.</span>
+          <p className="text-muted-foreground text-lg max-w-2xl mb-8 leading-relaxed">
+            Backend engineer specializing in distributed systems and Kubernetes. 
+            Built production-grade systems with{" "}
+            <span className="text-foreground font-medium">ML-enhanced autoscaling</span> and{" "}
+            <span className="text-foreground font-medium">sub-1ms microservices</span>.{" "}
+            <span className="text-primary font-medium">Seeking full-time Backend/DevOps roles.</span>
           </p>
 
           <div className="flex flex-wrap gap-3">
