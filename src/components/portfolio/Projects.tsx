@@ -165,9 +165,9 @@ const projects: Project[] = [
   {
     name: "ElastiKube Autoscaler",
     complexity: "High",
-    desc: "Production-grade intelligent autoscaler for K3s clusters with 4-layer scaling system: time-aware thresholds (peak/off-peak), flash sale detection (>30% spike in 2min), and Prophet ML forecasting (15min ahead). Event-driven Lambda architecture with DynamoDB distributed locking, multi-AZ high availability, and spot instance support achieving 60% cost reduction ($200→$111-$149/month).",
-    tech: ["AWS Lambda", "DynamoDB", "K3s", "Prophet", "Pulumi", "CloudWatch"],
-    github: "https://github.com/kaziiriad/elastikube",
+    desc: "Production-grade intelligent autoscaler for K3s clusters. 4-layer scaling: (1) Data Collection for ML training, (2) Time-Aware thresholds (peak 85%/60%, off-peak 60%/40%), (3) Flash Sale Detection (>30% CPU spike in 2min), (4) Prophet ML forecasting (15min ahead). Event-driven Lambda architecture with DynamoDB WAL crash recovery, distributed locking (200s timeout), multi-AZ round-robin/LIFO, spot fallback to On-Demand. v1.3: Pre-Baked AMI (91s→30s bootstrap). v1.2: ML pipeline with Kubernetes CronJob for weekly model retraining. v1.0: Event-driven Lambda + DynamoDB + 17 CloudWatch alarms. Cost: $111-$283/month.",
+    tech: ["AWS Lambda", "EventBridge", "DynamoDB", "K3s", "Prophet", "Kubernetes CronJob", "Pulumi", "Ansible", "CloudWatch", "SSM"],
+    github: "https://github.com/kaziiriad/elastikube-demo",
   },
   {
     name: "StreamBuddy",
